@@ -1,0 +1,22 @@
+package mtoyear;
+
+import java.util.Scanner;
+
+public class Mtoyear {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    int m,y,days;
+    System.out.print("Enter the number of minutes-");
+    Scanner s= new Scanner(System.in);
+    m= s.nextInt();
+    y=m/525600;
+    int r = m%525600;
+    days= r/1440;
+    System.out.println(m+" minutes is approximtely "+y+" years and "+days+" days.");
+    }
+    
+}
+        
